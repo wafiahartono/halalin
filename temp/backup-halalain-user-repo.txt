@@ -1,0 +1,88 @@
+
+    override suspend fun updateCartItemQuantity(itemId: String, quantity: Int) {
+        if (cartItemList == null) refreshCartItemList()
+        if (quantity == 0) {
+            removeItemFromCart(itemId)
+            return
+        }
+        Firebase.firestore
+            .collection("users").document(getUserId())
+            .collection("cart_items").document(itemId)
+            .update("quantity", quantity)
+            .await()
+        val index = cartItemList!!.indexOfFirst { it.id == itemId }
+        cartItemList!![index] = cartItemList!![index].copy(quantity = quantity)
+    }
+
+    override suspend fun removeItemFromCart(itemId: String) {
+        if (cartItemList == null) refreshCartItemList()
+        Firebase.firestore
+            .collection("users").document(getUserId())
+            .collection("cart_items").document(itemId)
+            .delete()
+            .await()
+        cartItemList!!.removeAt(cartItemList!!.indexOfFirst { it.id == itemId })
+    }
+
+    private suspend fun refreshFavoriteVendorList() {
+        logd("refreshFavoriteVendorList favoriteVendorList old: \n${favoriteVendorList?.prettyString()}\n")
+        favoriteVendorList = Firebase.firestore
+            .collection("users").document(getUserId())
+            .collection("favorite_vendors")
+            .orderBy("vendor.name")
+            .get()
+            .await()
+            .documents
+            .map {
+                Pair(
+                    it.id,
+                    Vendor(
+                        id = it.getString("vendor.id"),
+                        location = it.getString("vendor.location"),
+                        logoUrl = it.getString("vendor.logo_url"),
+                        name = it.getString("vendor.name"),
+                        rating = it.getDouble("vendor.rating")?.toFloat() ?: 0F,
+                        reviewNumber = it.getLong("vendor.review_number")?.toInt() ?: 0
+                    )
+                )
+            }
+            .toMutableList()
+        logd("refreshFavoriteVendorList favoriteVendorList new: \n${favoriteVendorList?.prettyString()}\n")
+    }
+
+    override suspend fun getFavoriteVendorList(): List<Vendor> {
+        logd("getFavoriteVendorList")
+        refreshFavoriteVendorList()
+        return favoriteVendorList!!.map { it.second }
+    }
+
+    override suspend fun isVendorFavorite(vendorId: String): Boolean {
+        if (favoriteVendorList == null) refreshFavoriteVendorList()
+        return favoriteVendorList!!.indexOfFirst { it.second.id == vendorId } != -1
+    }
+
+    override suspend fun addVendorToFavorite(vendorId: String) {
+        if (favoriteVendorList == null) refreshFavoriteVendorList()
+        val reference = Firebase.firestore
+            .collection("users").document(getUserId())
+            .collection("favorite_vendors").document()
+        reference
+            .set(hashMapOf("vendor" to hashMapOf("id" to vendorId)))
+            .await()
+        favoriteVendorList!!.add(
+            Pair(reference.id, Vendor(id = vendorId))
+        )
+    }
+
+    override suspend fun removeVendorFromFavorite(vendorId: String) {
+        if (favoriteVendorList == null) refreshFavoriteVendorList()
+        val itemIndex = favoriteVendorList!!.indexOfFirst { it.second.id == vendorId }
+        Firebase.firestore
+            .collection("users").document(getUserId())
+            .collection("favorite_vendors").document(
+                favoriteVendorList!![itemIndex].first
+            )
+            .delete()
+            .await()
+        favoriteVendorList!!.removeAt(itemIndex)
+    }
