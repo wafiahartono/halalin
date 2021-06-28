@@ -1,0 +1,131 @@
+<resources>
+
+    <string name="app_name">Halalin</string>
+
+    <string name="cancel">Batalkan</string>
+    <string name="cart">Keranjang</string>
+    <string name="chat">Chat</string>
+    <string name="checkout">Checkout</string>
+    <string name="confirm_password">Konfirmasi password</string>
+    <string name="contact">Kontak</string>
+    <string name="display_name">Nama tampilan</string>
+    <string name="email_address">Alamat email</string>
+    <string name="favorite">Favorit</string>
+    <string name="home">Beranda</string>
+    <string name="inbox">Inbox</string>
+    <string name="no">Tidak</string>
+    <string name="notification">Pemberitahuan</string>
+    <string name="password">Password</string>
+    <string name="product">Produk</string>
+    <string name="profile">Profil</string>
+    <string name="review">Ulasan</string>
+    <string name="save_changes">Simpan perubahan</string>
+    <string name="sign_in">Masuk</string>
+    <string name="sign_out">Keluar</string>
+    <string name="sign_up">Daftar</string>
+    <string name="search">Cari</string>
+    <string name="service">Layanan</string>
+    <string name="show_all_review">Tampilkan semua ulasan</string>
+    <string name="transaction">Transaksi</string>
+    <string name="vendor">Vendor</string>
+    <string name="yes">Ya</string>
+
+    <string name="fragment_profile_password_placeholder">********</string>
+    <string name="fragment_profile_signed_in_as_guest_message">Kamu masuk sebagai tamu</string>
+    <string name="fragment_profile_sign_in_button_text">Masuk sebagai user</string>
+    <string name="fragment_profile_sign_out_dialog_message">Apakah kamu ingin keluar?</string>
+
+    <string name="fragment_sign_in_sign_in_as_guest_button_text">Masuk sebagai tamu</string>
+    <string name="fragment_sign_in_failure_message">Tidak dapat masuk, coba beberapa saat lagi</string>
+    <string name="fragment_sign_in_invalid_credentials_message">Alamat email atau password salah</string>
+    <string name="fragment_sign_in_loading_message">Memasukkan user…</string>
+    <string name="fragment_sign_in_sign_up_button_text">Belum punya akun? Daftar di sini</string>
+
+    <string name="fragment_sign_up_confirmation_password_doesnt_match_message">Konfirmasi password tidak cocok</string>
+    <string name="fragment_sign_up_email_address_already_registered_message">Alamat email sudah terdaftar</string>
+    <string name="fragment_sign_up_email_address_malformed_message">Alamat email tidak dalam format yang benar</string>
+    <string name="fragment_sign_up_failure_message">Tidak dapat mendaftar, coba beberapa saat lagi</string>
+    <string name="fragment_sign_up_loading_message">Mendaftarkan user…</string>
+    <string name="fragment_sign_up_sign_in_button_text">Sudah punya akun? Masuk di sini</string>
+    <string name="fragment_sign_up_weak_password_message">Password harus setidaknya 8 karakter</string>
+
+    <string name="fragment_vendor_detail_open_vendor_contact_dialog_message">Buka kontak vendor?</string>
+    <string name="fragment_vendor_detail_open_vendor_contact_intent_chooser_title">Pilih aplikasi untuk membuka kontak</string>
+
+    <string name="contact_facebook">Facebook</string>
+    <string name="contact_instagram">Instagram</string>
+    <string name="contact_phone">Telepon</string>
+    <string name="contact_website">Website</string>
+    <string name="contact_whatsapp">WhatsApp</string>
+
+    <string name="fragment_vendor_search_title">Cari vendor</string>
+
+    <string name="item_product_add_to_cart_button_text">Tambahkan ke keranjang</string>
+
+    <string name="price_range_symbol">$</string>
+    <string name="template_field_required_message">Kolom %1$s tidak boleh kosong</string>
+    <string name="template_vendor_rating">%1$.1f</string>
+    <string name="template_vendor_review_number">(%1$d)</string>
+
+    <string name="content_desc_app_logo">Logo aplikasi</string>
+    <string name="content_desc_product_image">Gambar produk</string>
+    <string name="content_desc_review_user_profile_picture">Foto profil user</string>
+    <string name="content_desc_service_image">Gambar layanan</string>
+    <string name="content_desc_service_icon">Ikon layanan</string>
+    <string name="content_desc_vendor_logo">Logo vendor</string>
+
+    <string name="content_desc_state_image">Gambar keadaan</string>
+    <string name="state_empty_message">Tidak ada apa-apa di sini</string>
+    <string name="state_error_message">Galat tak terduga telah terjadi</string>
+    <string name="state_loading_message">Memuat data…</string>
+
+    <string name="fragment_vendor_detail_added_to_favorite_message">Berhasil ditambahkan ke favorit</string>
+    <string name="fragment_vendor_detail_set_favorite_failed_message">Terjadi kesalahan, coba beberapa saat lagi</string>
+    <string name="fragment_vendor_detail_removed_from_favorite_message">Berhasil dihapus dari favorit</string>
+
+    <string name="retry">Coba lagi</string>
+    <string name="loading">Memuat…</string>
+    <string name="fragment_vendor_detail_show_all_review_failure_message">Tidak dapat memuat ulasan</string>
+    <string name="fragment_home_fetch_service_list_failure_message">Tidak dapat memuat daftar layanan</string>
+    <string name="fragment_vendor_detail_fetch_vendor_failure_message">Tidak dapat memuat vendor</string>
+    <string name="fragment_product_list_fetch_product_list_failure_message">Tidak dapat memuat daftar produk</string>
+    <string name="fragment_vendor_search_fetch_vendor_list_failure_message">Tidak dapat memuat daftar vendor</string>
+    <string name="refresh">Segarkan</string>
+    <string name="fragment_vendor_search_fetch_vendor_list_empty_message">Tidak ada vendor dengan kriteria ini</string>
+    <string name="filter">Saring</string>
+    <string name="search_filter">Saring pencarian</string>
+    <string name="save">Simpan</string>
+    <string name="apply">Terapkan</string>
+    <string name="sort">Urutkan</string>
+    <string name="fragment_product_list_fetch_product_list_empty_message">Tidak ada produk untuk vendor ini</string>
+    <string name="add">Tambahkan</string>
+    <string name="dialog_fragment_search_filter_fetch_service_list_failure_message">Tidak dapat memuat daftar layanan</string>
+    <string name="activity_main_outdated_app_version_dialog_title">Pembaruan tersedia</string>
+    <string name="activity_main_outdated_app_version_dialog_message">Pasang versi terbaru aplikasi Halalin untuk dapat terus menggunakan aplikasi</string>
+    <string name="update">Perbarui</string>
+    <string name="later">Nanti saja</string>
+    <string name="fragment_vendor_detail_fetch_vendor_not_found_message">Vendor tidak ditemukan</string>
+    <string name="signInResult">Pesan</string>
+    <string name="search_vendor">Cari vendor</string>
+    <string name="fragment_favorite_fetch_favorite_vendor_list_empty_message">Kamu belum punya vendor favorit</string>
+    <string name="dialog_fragment_add_cart_item_success_message">Produk telah ditambahkan ke keranjang</string>
+    <string name="dialog_fragment_add_cart_item_failure_message">Tidak dapat menambahkan produk ke keranjang</string>
+    <string name="unexpected_error_message">Galat tak terduga telah terjadi</string>
+    <string name="halalin_pay">Halalin Pay</string>
+    <string name="bank_transfer">Transfer bank</string>
+    <string name="payment_method">Metode pembayaran</string>
+    <string name="place_order">Tempatkan pesanan</string>
+
+    <string-array name="vendor_search_filter_sort_field">
+        <item>Lokasi</item>
+        <item>Nama</item>
+        <item>Rating</item>
+        <item>Jumlah review</item>
+    </string-array>
+
+    <string-array name="vendor_search_filter_sort_order">
+        <item>Ascending</item>
+        <item>Descending</item>
+    </string-array>
+
+</resources>

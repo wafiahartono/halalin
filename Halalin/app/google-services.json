@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "128272993726",
+    "firebase_url": "https://halalin-c8f9b.firebaseio.com",
+    "project_id": "halalin-c8f9b",
+    "storage_bucket": "halalin-c8f9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128272993726:android:8c260c9c91794809df3def",
+        "android_client_info": {
+          "package_name": "com.halalin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "128272993726-ikg44kg27tj01un1dr30ub97722vt36r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByne2wYFeKq8hXLdXWss4RGOpjK_e-2YQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "128272993726-ikg44kg27tj01un1dr30ub97722vt36r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

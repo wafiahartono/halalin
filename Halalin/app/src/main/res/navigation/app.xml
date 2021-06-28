@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_app"
+    app:startDestination="@id/home_fragment"
+    tools:ignore="UnusedNavigation">
+
+    <action
+        android:id="@+id/action_authenticate"
+        app:destination="@id/sign_in_fragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim"
+        app:popUpTo="@id/navigation_app"
+        app:popUpToInclusive="true" />
+
+    <fragment
+        android:id="@+id/sign_in_fragment"
+        android:name="com.halalin.auth.signin.fragment.SignInFragment"
+        tools:layout="@layout/fragment_sign_in">
+
+        <action
+            android:id="@+id/action_sign_up"
+            app:destination="@id/sign_up_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_finish_authenticate"
+            app:destination="@id/home_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/sign_in_fragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/sign_up_fragment"
+        android:name="com.halalin.auth.signup.fragment.SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+
+        <action
+            android:id="@+id/action_finish_authenticate"
+            app:destination="@id/home_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/sign_up_fragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.halalin.home.fragment.HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_search_vendor"
+            app:destination="@id/vendor_search_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+
+            <argument
+                android:name="serviceIdFilter"
+                app:argType="string" />
+
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/vendor_search_fragment"
+        android:name="com.halalin.vendor.fragment.search.VendorSearchFragment"
+        tools:layout="@layout/fragment_vendor_search">
+
+        <argument
+            android:name="serviceIdFilter"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_view_vendor_detail"
+            app:destination="@id/vendor_detail_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+
+            <argument
+                android:name="vendorId"
+                app:argType="string" />
+
+            <argument
+                android:name="vendorName"
+                app:argType="string" />
+
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/vendor_detail_fragment"
+        android:name="com.halalin.vendor.fragment.detail.VendorDetailFragment"
+        tools:layout="@layout/fragment_vendor_detail">
+
+        <argument
+            android:name="vendorId"
+            app:argType="string" />
+
+        <argument
+            android:name="vendorName"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_view_product_list"
+            app:destination="@id/product_list_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+
+            <argument
+                android:name="vendorId"
+                app:argType="string" />
+
+            <argument
+                android:name="vendorName"
+                app:argType="string" />
+
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/product_list_fragment"
+        android:name="com.halalin.vendor.product.fragment.ProductFragment"
+        tools:layout="@layout/fragment_product">
+
+        <argument
+            android:name="vendorId"
+            app:argType="string" />
+
+        <argument
+            android:name="vendorName"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/transaction_list_fragment"
+        android:name="com.halalin.transaction.fragment.list.TransactionListFragment"
+        tools:layout="@layout/fragment_transaction_list" />
+
+    <fragment
+        android:id="@+id/message_room_fragment"
+        android:name="com.halalin.message.room.fragment.MessageRoomFragment"
+        tools:layout="@layout/fragment_message_room" />
+
+    <fragment
+        android:id="@+id/favorite_fragment"
+        android:name="com.halalin.favorite.fragment.FavoriteFragment"
+        tools:layout="@layout/fragment_favorite">
+
+        <action
+            android:id="@+id/action_view_vendor_detail"
+            app:destination="@id/vendor_detail_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+
+            <argument
+                android:name="vendorId"
+                app:argType="string" />
+
+            <argument
+                android:name="vendorName"
+                app:argType="string" />
+
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="com.halalin.profile.fragment.ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

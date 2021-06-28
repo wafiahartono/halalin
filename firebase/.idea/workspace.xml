@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="70ede8fe-7333-4db0-977a-d868e8433627" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Halalin/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/main/app/repository/AppRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/main/app/repository/FirebaseAppRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/util/ListenableRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/auth/model/AuthState.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/auth/repository/AuthRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/auth/repository/AuthRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/auth/repository/FirebaseAuthRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/auth/repository/FirebaseAuthRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/auth/signup/fragment/SignUpFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/auth/signup/fragment/SignUpFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/cart/fragment/ViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/cart/fragment/ViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/favorite/fragment/FavoriteFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/favorite/fragment/FavoriteFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/favorite/fragment/ViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/favorite/fragment/ViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/home/fragment/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/home/fragment/HomeFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/home/fragment/ViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/home/fragment/ViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/main/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/main/app/Application.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/main/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/main/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/main/ViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/main/ViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/message/repository/Repository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/message/repository/MessageRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/profile/ProfileFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/profile/fragment/ProfileFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/profile/ViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/profile/fragment/ViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/profile/repository/FirebaseUserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/profile/repository/FirebaseUserRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/profile/repository/UserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/profile/repository/UserRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/service/repository/FirebaseServiceRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/service/repository/FirebaseServiceRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/util/Clearable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/util/ClearableViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/util/Extensions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/util/Extensions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/util/Playground.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/util/RealtimeListener.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/fragment/detail/ReviewAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/fragment/detail/ReviewAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/fragment/detail/VendorDetailFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/fragment/detail/VendorDetailFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/fragment/detail/ViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/fragment/detail/ViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/fragment/search/VendorAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/fragment/search/VendorAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/fragment/search/VendorSearchFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/fragment/search/VendorSearchFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/fragment/search/ViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/fragment/search/ViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/fragment/search/filter/SearchFilter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/model/SearchFilter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/fragment/search/filter/SearchFilterDialogFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/fragment/search/filter/SearchFilterFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/product/fragment/AddCartItemDialogFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/product/fragment/AddCartItemFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/product/fragment/ProductFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/product/fragment/ProductFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/product/fragment/ViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/product/fragment/ViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/repository/FirebaseVendorRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/repository/FirebaseVendorRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/repository/VendorRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/java/com/halalin/vendor/repository/VendorRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/res/drawable/ic_remove_shopping_cart_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/res/layout/dialog_fragment_add_cart_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/res/layout/fragment_add_cart_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/res/layout/dialog_fragment_search_filter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/res/layout/fragment_search_filter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/res/layout/fragment_cart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/res/layout/fragment_cart.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/res/layout/fragment_favorite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/res/layout/fragment_favorite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/res/layout/item_service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/res/layout/item_service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/res/menu/bottom_navigation_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/res/menu/bottom_navigation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/res/navigation/app.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/res/navigation/app.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Halalin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Halalin/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebaserc" beforeDir="false" afterPath="$PROJECT_DIR$/.firebaserc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/functions/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/seeder/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/seeder/app.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/seeder/backups.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/seeder/data.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/seeder/extension.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/seeder/factory.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/seeder/fallback.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/seeder/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/seeder/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/seeder/playground.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/seeder/seeder.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/seeder/view.ts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1gdliNDIHPkdOX9dATrKwaqEbHm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70ede8fe-7333-4db0-977a-d868e8433627" name="Default Changelist" comment="" />
+      <created>1598452481514</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598452481514</updated>
+      <workItem from="1598452482692" duration="33000" />
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="274" y="0" key="new project wizard" timestamp="1598452510348">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="274" y="0" key="new project wizard/0.0.1366.738@0.0.1366.738" timestamp="1598452510348" />
+  </component>
+</project>

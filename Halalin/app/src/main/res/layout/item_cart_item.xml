@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_view_product_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/content_desc_product_image"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_product_name"
+        style="?attr/textAppearanceSubtitle1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        app:layout_constraintBottom_toTopOf="@id/text_view_vendor_name"
+        app:layout_constraintEnd_toStartOf="@id/text_input_layout_quantity"
+        app:layout_constraintStart_toEndOf="@id/image_view_product_image"
+        app:layout_constraintTop_toTopOf="@id/image_view_product_image"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Product name" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_vendor_name"
+        style="?attr/textAppearanceCaption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toTopOf="@id/text_view_subtotal"
+        app:layout_constraintEnd_toStartOf="@id/text_input_layout_quantity"
+        app:layout_constraintStart_toEndOf="@id/image_view_product_image"
+        app:layout_constraintTop_toBottomOf="@id/text_view_product_name"
+        tools:text="Vendor name" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_subtotal"
+        style="?attr/textAppearanceBody1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@id/image_view_product_image"
+        app:layout_constraintEnd_toStartOf="@id/text_input_layout_quantity"
+        app:layout_constraintStart_toEndOf="@id/image_view_product_image"
+        app:layout_constraintTop_toBottomOf="@id/text_view_vendor_name"
+        tools:text="Subtotal" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_quantity"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:endIconCheckable="true"
+        app:endIconDrawable="@drawable/ic_add_24dp"
+        app:endIconMode="custom"
+        app:layout_constraintBottom_toBottomOf="@id/image_view_product_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/image_view_product_image"
+        app:startIconCheckable="true"
+        app:startIconDrawable="@drawable/ic_remove_24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textAlignment="center"
+            tools:text="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

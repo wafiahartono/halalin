@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--  TODO fix layout  -->
+    <ImageView
+        android:id="@+id/image_view_user_profile_picture"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/content_desc_review_user_profile_picture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_user_display_name"
+        style="?textAppearanceSubtitle2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@id/rating_bar_rating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image_view_user_profile_picture"
+        app:layout_constraintTop_toTopOf="@id/image_view_user_profile_picture"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="User display name" />
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/rating_bar_rating"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:stepSize="1"
+        app:layout_constraintBottom_toBottomOf="@id/image_view_user_profile_picture"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/image_view_user_profile_picture"
+        app:layout_constraintTop_toBottomOf="@id/text_view_user_display_name" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_date"
+        style="?textAppearanceCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/rating_bar_rating"
+        app:layout_constraintStart_toEndOf="@id/rating_bar_rating"
+        app:layout_constraintTop_toTopOf="@id/rating_bar_rating"
+        tools:text="Date" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_comment"
+        style="?textAppearanceBody2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_view_user_profile_picture"
+        tools:text="Comment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

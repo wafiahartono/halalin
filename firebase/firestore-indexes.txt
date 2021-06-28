@@ -1,0 +1,21 @@
+Composite
+
+vendor_search_snippets (collection) services (arrays), name (asc)
+
+vendor_search_snippets (collection) services (arrays), name (desc)
+
+vendor_search_snippets (collection) services (arrays), location (asc)
+
+vendor_search_snippets (collection) services (arrays), location (desc)
+
+vendor_search_snippets (collection) services (arrays), rating (asc)
+
+vendor_search_snippets (collection) services (arrays), rating (desc)
+
+vendor_search_snippets (collection) services (arrays), review_number (asc)
+
+vendor_search_snippets (collection) services (arrays), review_number (desc)
+
+Single field
+
+favorite_vendors @ vendor.id : collection (asc, desc, arrays), collection group (asc)

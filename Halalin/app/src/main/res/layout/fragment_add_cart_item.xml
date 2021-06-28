@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@drawable/bg_rounded_top_l"
+    tools:backgroundTint="@color/gray_300">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_product_name"
+        style="?textAppearanceHeadline6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Product name" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_subtotal"
+        style="?textAppearanceSubtitle1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/text_input_layout_quantity"
+        app:layout_constraintEnd_toStartOf="@+id/text_input_layout_quantity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_input_layout_quantity"
+        tools:text="Rp 10.000.000" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_quantity"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:endIconCheckable="true"
+        app:endIconDrawable="@drawable/ic_add_24dp"
+        app:endIconMode="custom"
+        app:layout_constraintBottom_toTopOf="@id/button_add_to_cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text_view_subtotal"
+        app:layout_constraintTop_toBottomOf="@id/text_view_product_name"
+        app:startIconCheckable="true"
+        app:startIconDrawable="@drawable/ic_remove_24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textAlignment="center"
+            tools:text="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_add_to_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/item_product_add_to_cart_button_text"
+        android:textAllCaps="false"
+        app:icon="@drawable/ic_add_shopping_cart_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_input_layout_quantity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

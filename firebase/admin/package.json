@@ -1,0 +1,13 @@
+{
+    "dependencies": {
+        "@types/faker": "^4.1.12",
+        "@types/prompts": "^2.0.8",
+        "faker": "^4.1.0",
+        "firebase-admin": "^9.1.0",
+        "prompts": "^2.3.2"
+    },
+    "engines": {
+        "node": "10"
+    },
+    "private": true
+}

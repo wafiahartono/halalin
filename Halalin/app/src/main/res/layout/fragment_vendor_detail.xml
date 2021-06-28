@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:liftOnScroll="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            style="@style/Widget.MaterialComponents.Toolbar.Surface"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:title="Vendor name" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        tools:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:id="@+id/image_view_logo"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:background="@color/color_secondary_alpha_15"
+                android:contentDescription="@string/content_desc_vendor_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:scaleType="centerCrop" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_rating"
+                style="?attr/textAppearanceSubtitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image_view_logo"
+                tools:text="Rating" />
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/rating_bar_rating"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:stepSize="0.1"
+                app:layout_constraintBottom_toBottomOf="@id/text_view_rating"
+                app:layout_constraintStart_toEndOf="@id/text_view_rating"
+                app:layout_constraintTop_toTopOf="@id/text_view_rating" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_review_number"
+                style="?attr/textAppearanceSubtitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBaseline_toBaselineOf="@id/text_view_rating"
+                app:layout_constraintStart_toEndOf="@id/rating_bar_rating"
+                tools:text="Review number" />
+
+            <CheckBox
+                android:id="@+id/button_favorite"
+                android:layout_width="@dimen/icon_button_dimension"
+                android:layout_height="@dimen/icon_button_dimension"
+                android:layout_marginEnd="16dp"
+                android:button="@drawable/selector_ic_favorite_24dp"
+                app:layout_constraintBottom_toBottomOf="@id/text_view_review_number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/text_view_review_number"
+                tools:checked="false" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_name"
+                style="?attr/textAppearanceHeadline4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_rating"
+                tools:text="Name" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_price_range"
+                style="?attr/textAppearanceSubtitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textColor="?attr/colorSecondary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_name"
+                tools:text="Price range" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_location"
+                style="?attr/textAppearanceSubtitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBaseline_toBaselineOf="@id/text_view_price_range"
+                app:layout_constraintStart_toEndOf="@id/text_view_price_range"
+                tools:text="Location" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_product"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/product"
+                android:textAllCaps="false"
+                app:icon="@drawable/ic_local_offer_24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_location" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_chat"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/chat"
+                android:textAllCaps="false"
+                app:icon="@drawable/ic_chat_24dp"
+                app:layout_constraintBottom_toBottomOf="@id/button_product"
+                app:layout_constraintStart_toEndOf="@id/button_product"
+                app:layout_constraintTop_toTopOf="@id/button_product" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_description"
+                style="?attr/textAppearanceBody1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/button_product"
+                tools:text="Description" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_section_service"
+                style="?attr/textAppearanceSubtitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/service"
+                android:textColor="?attr/colorSecondaryVariant"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_description" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal_scroll_view_service"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_section_service">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chip_group_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:singleLine="true" />
+
+            </HorizontalScrollView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_section_contact"
+                style="?attr/textAppearanceSubtitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/contact"
+                android:textColor="?attr/colorSecondaryVariant"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/horizontal_scroll_view_service" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal_scroll_view_contact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_section_contact">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/linear_layout_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isScrollContainer="false"
+                    android:orientation="horizontal"
+                    android:overScrollMode="never" />
+
+            </HorizontalScrollView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_section_review"
+                style="?attr/textAppearanceSubtitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/review"
+                android:textColor="?attr/colorSecondaryVariant"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/horizontal_scroll_view_contact"
+                tools:visibility="visible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_review"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:isScrollContainer="false"
+                android:orientation="vertical"
+                android:overScrollMode="never"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_section_review"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_review"
+                tools:visibility="visible" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_show_all_review"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/show_all_review"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recycler_view_review"
+                tools:visibility="visible" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/layout_state"
+        layout="@layout/layout_state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        tools:visibility="invisible" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
